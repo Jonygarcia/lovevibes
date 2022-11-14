@@ -1,0 +1,67 @@
+body{
+    background-color:white ;
+}
+
+.nav-logo{
+    width: auto;
+    max-height: 100px;
+    min-height: 75px;
+}
+
+.nav-item a{
+    color: black;
+}
+
+.nav-item a:hover{
+    background-color: rgba(137, 43, 226, 0.192);
+    text-decoration: underline 1px #ff0066a6;
+}
+
+.icon-product{
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left: 2px;
+    padding: 0;
+}
+
+.juguetes {
+    background-image: url(./../icons/juguetes.svg);
+}
+
+.lubricantes {
+    background-image: url(./../icons/lubricantes.svg);
+}
+
+.lenceria {
+    background-image: url(./../icons/lenceria.svg);
+}
+
+.bdsm {
+    background-image: url(./../icons/bdsm.svg);
+}
+
+.salud {
+    background-image: url(./../icons/salud.svg);
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .dropdown-item:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .nav-item a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        text-decoration: none;
+    }
+}
+
