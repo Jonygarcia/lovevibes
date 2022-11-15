@@ -16,6 +16,11 @@ body {
     color: black;
 }
 
+.nav-link{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .text-hover-white:hover {
     background-color: var(--secondcolor);
     color: white !important;
@@ -33,44 +38,53 @@ body {
 }
 
 .juguetes {
-    background-image: url(./../icons/juguetes.svg);
+    background-image: url(../icons/juguetes.svg);
 }
 
 .lubricantes {
-    background-image: url(./../icons/lubricantes.svg);
+    background-image: url(../icons/lubricantes.svg);
 }
 
 .lenceria {
-    background-image: url(./../icons/lenceria.svg);
+    background-image: url(../icons/lenceria.svg);
 }
 
 .bdsm {
-    background-image: url(./../icons/bdsm.svg);
+    background-image: url(../icons/bdsm.svg);
 }
 
 .salud {
-    background-image: url(./../icons/salud.svg);
+    background-image: url(../icons/salud.svg);
+}
+
+.banner-vibrar{
+    background-color: var(--secondcolor);
+}
+
+.text-vibrar{
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .line-separator{
-    color: rgba(0, 0, 0, 0.253);
+    color: rgba(0, 0, 0, 0.377);
 }
 
 .section-products {
     padding: 80px 0 54px;
 }
 
-.section-products .header-popular {
+.header-popular {
     margin-bottom: 60px;
 }
 
-.section-products .header-popular h3 {
+.header-popular h3 {
     font-size: 1rem;
     color: var(--secondcolor);
     font-weight: 500;
 }
 
-.section-products .header-popular h2 {
+.header-popular h2 {
     font-size: 2.2rem;
     font-weight: 400;
     color: #444444;
@@ -104,23 +118,23 @@ body {
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+    background: url("../img/productos/SatisfyerPro2.webp") no-repeat center;
     background-size: cover;
     transition: all 0.3s;
 }
 
 .section-products #product-2 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+    background: url("../img/productos/MamboLavanda.webp") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-3 .part-1::before {
-    background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+    background: url("../img/productos/brillyglam_rabbit.png") no-repeat center;
     background-size: cover;
 }
 
 .section-products #product-4 .part-1::before {
-    background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+    background: url("../img/productos/zumba_masturbador.webp") no-repeat center;
     background-size: cover;
 }
 
@@ -128,7 +142,7 @@ body {
 .section-products .single-product .part-1 .new {
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: 0px;
     color: #ffffff;
     background-color: var(--secondcolor);
     padding: 2px 8px;
@@ -162,19 +176,20 @@ body {
     margin-right: 4px;
 }
 
-.section-products .single-product .part-1 ul li a {
+.section-products .single-product .part-1 ul li i {
     display: inline-block;
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background-color: #ffffff;
-    color: #444444;
+    background-color: #ffffffda;
+    color: #000000;
     text-align: center;
     box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
     transition: color 0.2s;
 }
 
-.section-products .single-product .part-1 ul li a:hover {
+.section-products .single-product .part-1 ul li i:hover {
+    cursor: pointer;
     color: var(--secondcolor);
 }
 
@@ -206,10 +221,17 @@ body {
 }
 
 
-@media screen and (max-width: 991px) {
+.bg{
+    background-color: rgba(212, 0, 255, 0.137);
+}
+
+
+
+@media screen and (max-width: 767px) {
 
     .text-hover-white:hover {
         background-color: rgba(255, 255, 255, 0);
         color: black !important;
     }
+
 }

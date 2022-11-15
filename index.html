@@ -25,12 +25,14 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid justify-content-center ">
-          <img class="nav-logo" src="./img/lovevibes.png" alt="logo lovevibes">
+          <a href="./index.html">
+            <img class="nav-logo" src="./img/lovevibes.png" alt="logo lovevibes">
+          </a>
         </div>
       </nav>
 
       <!-- Menu -->
-      <nav class="navbar navbar-expand-lg bg-white" aria-label="Tenth navbar example">
+      <nav class="navbar navbar-expand-md bg-white" aria-label="Tenth navbar example">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu"
             aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +47,7 @@
 
               <li class="nav-item dropdown d-flex">
                 <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
-                  aria-expanded="false">Productos</a>
+                  aria-expanded="false"><i class="bi bi-star-fill"></i> Productos</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
                         class="icon-product lubricantes"></i>Lubricantes</a></li>
@@ -59,6 +61,29 @@
                         class="icon-product bdsm"></i>BDSM</a></li>
                 </ul>
               </li>
+
+              <!-- TODO PENDIENTE DE HACER EL CARRITO DE LA COMPRA Y LISTA DE DESEADOS-->
+              
+              <div>
+                <li class="nav-item dropdown d-flex">
+                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false"><i class="bi bi-cart-fill"></i> Carrito de la compra</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product lubricantes"></i>Lubricantes</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product juguetes"></i>Juguetes</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product lenceria"></i>Lencería</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product salud"></i>Higiene y salud</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product bdsm"></i>BDSM</a></li>
+                </ul>
+              </li>
+              </div>
+    
+
             </ul>
           </div>
         </div>
@@ -66,12 +91,19 @@
     </header>
 
     <!-- Banner BlackFriday -->
-    <section id="primary-banner" class="pt-5 pb-3">
+    <section id="primary-banner" class="pt-md-5">
       <div class="container-fluid mx-0 p-0 d-none d-md-block">
         <img src="./img/bannerbf.png" class=" w-100 h-auto" alt="...">
       </div>
       <div class="container-fluid mx-0 p-0 d-block d-md-none">
         <img src="./img/bannermb.png" class=" w-100 h-auto">
+      </div>
+    </section>
+
+    <!-- Banner sentidos -->
+    <section id="second-banner" class="container-fluid px-0">
+      <div class="banner-vibrar col-12">
+        <h2 class="text-vibrar text-center col-12 p-3">Descubre los productos que harán vibrar tus sentidos</h2>
       </div>
     </section>
 
@@ -85,24 +117,25 @@
               <h2>Productos Destacados</h2>
               <hr class="line-separator">
             </div>
-          </div>  
+          </div>
         </div>
-        
+
         <div class="row">
           <!-- Single Product -->
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div id="product-1" class="single-product">
               <div class="part-1">
+                <span class="discount">40% descuento</span>
                 <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
+                  <li><i id="cart-1" class="bi bi-cart" onclick="checkIcon('cart-1')"></i></li>
+                  <li><i id="heart-1" class="bi bi-suit-heart" onclick="checkIcon('heart-1')"></i></li>
                   <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Satisfyer Pro 2</h3>
+                <h4 class="product-old-price">49.99€</h4>
+                <h4 class="product-price">29.99€</h4>
               </div>
             </div>
           </div>
@@ -110,16 +143,17 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div id="product-2" class="single-product">
               <div class="part-1">
-                <span class="discount">15% off</span>
+                <span class="discount">46% descuento</span>
                 <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
+                  <li><i id="cart-2" class="bi bi-cart" onclick="checkIcon('cart-2')"></i></li>
+                  <li><i id="heart-2" class="bi bi-suit-heart" onclick="checkIcon('heart-2')"></i></li>
                   <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Platanomelón Mambo</h3>
+                <h4 class="product-old-price">49.99€</h4>
+                <h4 class="product-price">26.99€</h4>
               </div>
             </div>
           </div>
@@ -127,16 +161,16 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div id="product-3" class="single-product">
               <div class="part-1">
+                <span class="new">new</span>
                 <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
+                  <li><i id="cart-3" class="bi bi-cart" onclick="checkIcon('cart-3')"></i></li>
+                  <li><i id="heart-3" class="bi bi-suit-heart" onclick="checkIcon('heart-3')"></i></li>
                   <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Brilly Glam Rabbit</h3>
+                <h4 class="product-price">69.95€</h4>
               </div>
             </div>
           </div>
@@ -144,91 +178,79 @@
           <div class="col-md-6 col-lg-4 col-xl-3">
             <div id="product-4" class="single-product">
               <div class="part-1">
-                <span class="new">new</span>
+
+                <span class="discount">33% descuento</span>
                 <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
+                  <li><i id="cart-4" class="bi bi-cart" onclick="checkIcon('cart-4')"></i></li>
+                  <li><i id="heart-4" class="bi bi-suit-heart" onclick="checkIcon('heart-4')"></i></li>
                   <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
                 </ul>
               </div>
               <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
+                <h3 class="product-title">Platanomelón Zumba</h3>
+                <h4 class="product-old-price">44.99€</h4>
+                <h4 class="product-price">29.99€</h4>
               </div>
             </div>
           </div>
-          <!-- Single Product -->
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div id="product-1" class="single-product">
-              <div class="part-1">
-                <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
-                </ul>
-              </div>
-              <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
-              </div>
-            </div>
-          </div>
-          <!-- Single Product -->
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div id="product-2" class="single-product">
-              <div class="part-1">
-                <span class="discount">15% off</span>
-                <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
-                </ul>
-              </div>
-              <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
-              </div>
-            </div>
-          </div>
-          <!-- Single Product -->
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div id="product-3" class="single-product">
-              <div class="part-1">
-                <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
-                </ul>
-              </div>
-              <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-old-price">$79.99</h4>
-                <h4 class="product-price">$49.99</h4>
-              </div>
-            </div>
-          </div>
-          <!-- Single Product -->
-          <div class="col-md-6 col-lg-4 col-xl-3">
-            <div id="product-4" class="single-product">
-              <div class="part-1">
-                <span class="new">new</span>
-                <ul>
-                  <li><a href="#"><i class="bi bi-cart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-suit-heart"></i></a></li>
-                  <li><a href="#"><i class="bi bi-fullscreen"></i></a></li>
-                </ul>
-              </div>
-              <div class="part-2">
-                <h3 class="product-title">Here Product Title</h3>
-                <h4 class="product-price">$49.99</h4>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Confianza -->
+    <div class="bg col-12">
+      <section class="container px-4 pb-5" id="hanging-icons">
+
+        <div class="row justify-content-center text-center pt-5">
+          <div class="col-md-8 col-lg-6">
+            <div class="header-popular">
+              <h3>Te ofrecemos</h3>
+              <h2>Confianza</h2>
+              <hr class="line-separator">
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4  row-cols-1 row-cols-lg-3">
+      
+          <div class="col d-flex d-lg-block px-5">
+            <div class="text-left text-lg-center">
+              <div class="fs-2 mb-2 d-flex d-lg-block text-lg-center">
+                <i class="bi bi-box-seam d-flex d-lg-block"></i>
+                <h3 class="mx-2">Discrección</h3>
+              </div>
+              <h5>Enviamos los paquetes de forma anónima y en la factura no figura ningún nombre.</h4>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start px-5 pt-3 pt-lg-0">
+            <div class="text-left text-lg-center">
+              <div class="fs-2 mb-2 d-flex d-lg-block text-lg-center">
+                <i class="bi bi-award d-flex d-lg-block"></i>
+                <h3 class="mx-2">Garantía</h3>
+              </div>
+              <h5>
+                Todos los productos están cubiertos bajo una garantía de 3 años en caso de fallo de fábrica.<br>
+                Para devoluciones será sin previo uso con plazo de un mes.
+              </h5>
+            </div>
+          </div>
+
+          <div class="col d-flex align-items-start px-5 pt-3 pt-lg-0">
+            <div class="text-left text-lg-center">
+              <div class="fs-2 mb-2 d-flex d-lg-block text-lg-center">
+                <i class="bi bi-shield-lock d-flex d-lg-block"></i>
+                <h3 class="mx-2">Pago seguro</h3>
+              </div>
+              <h5>Gracias a la protección con certificación SSL de nuestra página tus datos están a salvo.</h5>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    
   </div>
 </body>
 
