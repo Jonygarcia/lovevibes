@@ -1,52 +1,59 @@
 "use strict";
-let cantProductos;
+let cantProductosCart;
+let cantProductosLove;
 
 function checkIcon(idIcon) {
     let iconSelected = document.getElementById(idIcon);
 
-    if (iconSelected.classList.contains("bi-suit-heart")){
+    if (iconSelected.classList.contains("bi-suit-heart")) {
         iconSelected.classList.remove("bi-suit-heart");
         iconSelected.classList.add("bi-suit-heart-fill");
-    } else if (iconSelected.classList.contains("bi-suit-heart-fill")){
+
+        cantProductosLove = addProduct("badge-love", cantProductosLove);
+    } else if (iconSelected.classList.contains("bi-suit-heart-fill")) {
         iconSelected.classList.remove("bi-suit-heart-fill");
         iconSelected.classList.add("bi-suit-heart");
-    }
-    
 
-    if (iconSelected.classList.contains("bi-cart")){
+        cantProductosLove = remProduct("badge-love", cantProductosLove);
+    }
+
+    if (iconSelected.classList.contains("bi-cart")) {
         iconSelected.classList.remove("bi-cart");
         iconSelected.classList.add("bi-cart-fill");
 
-        addProduct();
-    } else if (iconSelected.classList.contains("bi-cart-fill")){
+        cantProductosCart = addProduct("badge-cart", cantProductosCart);
+    } else if (iconSelected.classList.contains("bi-cart-fill")) {
         iconSelected.classList.remove("bi-cart-fill");
         iconSelected.classList.add("bi-cart");
 
-        remProduct();
+        cantProductosCart = remProduct("badge-cart", cantProductosCart);
     }
-
 }
 
-function addProduct() {
-    let badge = document.getElementById("badge-cart");
+function addProduct(id, contador) {
+    let badge = document.getElementById(id);
 
-    if (cantProductos === undefined) {
+    if (contador === undefined) {
         badge.removeAttribute("hidden");
-        cantProductos = 1;
+        contador = 1;
     } else {
-        cantProductos++;
-        badge.innerHTML = String(cantProductos);
+        contador++;
+        badge.innerHTML = String(contador);
     }
+
+    return contador;
 }
 
-function remProduct() {
-    let badge = document.getElementById("badge-cart");
+function remProduct(id, contador) {
+    let badge = document.getElementById(id);
 
-    if (cantProductos > 1) {
-        cantProductos--;
-        badge.innerHTML = String(cantProductos);
+    if (contador > 1) {
+        contador--;
+        badge.innerHTML = String(contador);
     } else {
         badge.setAttribute("hidden", "true");
-        cantProductos = undefined;
+        contador = undefined;
     }
+
+    return contador;
 }
