@@ -21,6 +21,8 @@ function checkIcon(idIcon) {
     } else if (iconSelected.classList.contains("bi-cart-fill")){
         iconSelected.classList.remove("bi-cart-fill");
         iconSelected.classList.add("bi-cart");
+
+        remProduct();
     }
 
 }
@@ -31,7 +33,20 @@ function addProduct() {
     if (cantProductos === undefined) {
         badge.removeAttribute("hidden");
         cantProductos = 1;
-    } else{
+    } else {
+        cantProductos++;
+        badge.innerHTML = String(cantProductos);
+    }
+}
 
+function remProduct() {
+    let badge = document.getElementById("badge-cart");
+
+    if (cantProductos > 1) {
+        cantProductos--;
+        badge.innerHTML = String(cantProductos);
+    } else {
+        badge.setAttribute("hidden", "true");
+        cantProductos = undefined;
     }
 }
