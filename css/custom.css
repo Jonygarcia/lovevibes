@@ -138,6 +138,26 @@ body {
     background-size: cover;
 }
 
+.section-products #product-5 .part-1::before {
+    background: url("../img/productos/Lelo_control_remoto.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("../img/productos/liebe_lubricante.webp") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("../img/productos/Esposas.webp") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("../img/productos/lovense-vibrador.webp") no-repeat center;
+    background-size: cover;
+}
+
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
     position: absolute;
