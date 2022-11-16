@@ -57,3 +57,47 @@ function remProduct(id, contador) {
 
     return contador;
 }
+
+function popupImage(url) {
+
+    let imgPopup = document.getElementById("insert-img");
+    let divPopup =  document.getElementById("div-popup");
+
+    imgPopup.setAttribute('src', url);
+    divPopup.classList.add('opened');
+}
+
+function closePopup() {
+    
+    let imgPopup = document.getElementById("insert-img");
+    let divPopup =  document.getElementById("div-popup");
+
+    imgPopup.removeAttribute('src');
+    divPopup.classList.remove('opened');
+}
+
+// $(document).ready(function() {
+
+//     // required elements
+//     var imgPopup = $('.img-popup');
+//     var imgCont  = $('.container__img-holder');
+//     var popupImage = $('.img-popup img');
+//     var closeBtn = $('.close-btn');
+  
+//     // handle events
+//     imgCont.on('click', function() {
+//       var img_src = $(this).children('img').attr('src');
+//       imgPopup.children('img').attr('src', img_src);
+//       imgPopup.addClass('opened');
+//     });
+  
+//     $(imgPopup, closeBtn).on('click', function() {
+//       imgPopup.removeClass('opened');
+//       imgPopup.children('img').attr('src', '');
+//     });
+  
+//     popupImage.on('click', function(e) {
+//       e.stopPropagation();
+//     });
+    
+//   });
