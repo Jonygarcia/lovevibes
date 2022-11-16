@@ -15,9 +15,7 @@ function checkIcon(idIcon) {
         iconSelected.classList.add("bi-suit-heart");
 
         cantProductosLove = remProduct("badge-love", cantProductosLove);
-    }
-
-    if (iconSelected.classList.contains("bi-cart")) {
+    } else if (iconSelected.classList.contains("bi-cart")) {
         iconSelected.classList.remove("bi-cart");
         iconSelected.classList.add("bi-cart-fill");
 
@@ -59,26 +57,23 @@ function remProduct(id, contador) {
 }
 
 function popupImage(url) {
-
     let imgPopup = document.getElementById("insert-img");
-    let divPopup =  document.getElementById("div-popup");
+    let divPopup = document.getElementById("div-popup");
 
-    imgPopup.setAttribute('src', url);
-    divPopup.classList.add('opened');
+    imgPopup.setAttribute("src", url);
+    divPopup.classList.add("opened");
 
     let headerPc = document.getElementById("header-pc");
     headerPc.classList.remove("sticky-lg-top");
 }
 
 function closePopup() {
-    
     let imgPopup = document.getElementById("insert-img");
-    let divPopup =  document.getElementById("div-popup");
+    let divPopup = document.getElementById("div-popup");
 
-    imgPopup.removeAttribute('src');
-    divPopup.classList.remove('opened');
+    imgPopup.removeAttribute("src");
+    divPopup.classList.remove("opened");
 
     let headerPc = document.getElementById("header-pc");
     headerPc.classList.add("sticky-lg-top");
 }
-
