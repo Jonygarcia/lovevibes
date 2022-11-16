@@ -1,5 +1,5 @@
 :root {
-    --secondcolor: #ff0066a6;
+    --secondcolor: #ff448f;
 }
 
 body {
@@ -220,6 +220,12 @@ body {
     transform: translateY(-50%);
 }
 
+.badge-cart{
+    font-size: 9px;
+    margin-left: 26px;
+    margin-top: 11px;
+    background-color: var(--secondcolor);
+}
 
 .bg{
     background-color: rgba(212, 0, 255, 0.137);
@@ -232,6 +238,15 @@ body {
     .text-hover-white:hover {
         background-color: rgba(255, 255, 255, 0);
         color: black !important;
+    }
+
+    .badge-cart{
+        margin-left: 18px;
+    }
+
+    .nav-logo{
+        height: 45px;
+        margin-right: 2%;
     }
 
 }
