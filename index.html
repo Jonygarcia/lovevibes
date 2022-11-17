@@ -21,7 +21,7 @@
 <body>
   <div class="mx-auto">
 
-    <header id="header-pc"c class="sticky-lg-top">
+    <header id="header-pc" c class="sticky-lg-top">
       <!-- Logo Navbar PC & Tablet -->
       <nav class="navbar navbar-expand-lg bg-white d-none d-md-block">
         <div class="container-fluid justify-content-center ">
@@ -68,20 +68,58 @@
                 </ul>
               </li>
 
-              <div>
-                <li class="nav-item d-flex position-relative">
-                  <a class="nav-link text-black text-hover-white" href="#" aria-expanded="false">
-                    <i class="bi bi-cart-fill">
-                      <span id="badge-cart"
-                        class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
-                        hidden="true">
-                        1
-                      </span>
-                    </i>
-                    Carrito de la compra
-                  </a>
-                </li>
-              </div>
+              <li class="nav-item dropdown d-flex position-relative">
+                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-cart-fill">
+                    <span id="badge-cart"
+                      class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
+                      hidden="true">
+                      1
+                    </span>
+                  </i>
+                  Carrito de la compra
+                </a>
+                <ul class="dropdown-menu">
+                  <li id="empty-cart">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#">
+                      No has añadido nada aún
+                    </a>
+                  </li>
+                  <li id="cart-product-1" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " hidden href="#"><img
+                        class="d-flex img-cart" src="./img/productos/satisfyer-min.webp">29.99€ - Satisfyer Pro 2</a>
+                  </li>
+                  <li id="cart-product-2" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/mambo-min.webp">26.99€ - Platanomelón Mambo</a>
+                  </li>
+                  <li id="cart-product-3" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/brillyglam-min.webp">69.95€ - Brilly Glam Rabbit</a>
+                  </li>
+                  <li id="cart-product-4" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" hidden href="#"><img
+                        class="d-flex img-cart" src="./img/productos/zumba-min.webp">29.99€ - Platanomelón Zumba</a>
+                  </li>
+                  <li id="cart-product-5" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/lelo-bolas-min.webp">178.99€ - Lelo Bolas Control Remoto</a>
+                  </li>
+                  <li id="cart-product-6" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/liebe-min.webp">6.99€ - Liebe Lubricantes</a>
+                  </li>
+                  <li id="cart-product-7" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/esposas-min.webp">10.49€ - Esposas Peluche Ted</a>
+                  </li>
+                  <li id="cart-product-8" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./img/productos/lush-min.webp">118.99€ - Lovesense Lush 3</a>
+                  </li>
+                </ul>
+              </li>
 
               <div>
                 <li class="nav-item d-flex position-relative">
@@ -179,7 +217,8 @@
                 <ul>
                   <li><i id="cart-3" class="bi bi-cart" onclick="checkIcon('cart-3')"></i></li>
                   <li><i id="heart-3" class="bi bi-suit-heart" onclick="checkIcon('heart-3')"></i></li>
-                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/brillyglam_rabbit.png')"></i></li>
+                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/brillyglam_rabbit.png')"></i>
+                  </li>
                 </ul>
               </div>
               <div class="part-2">
@@ -197,7 +236,8 @@
                 <ul>
                   <li><i id="cart-4" class="bi bi-cart" onclick="checkIcon('cart-4')"></i></li>
                   <li><i id="heart-4" class="bi bi-suit-heart" onclick="checkIcon('heart-4')"></i></li>
-                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/zumba_masturbador.webp')"></i></li>
+                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/zumba_masturbador.webp')"></i>
+                  </li>
                 </ul>
               </div>
               <div class="part-2">
@@ -218,7 +258,8 @@
                 <ul>
                   <li><i id="cart-5" class="bi bi-cart" onclick="checkIcon('cart-5')"></i></li>
                   <li><i id="heart-5" class="bi bi-suit-heart" onclick="checkIcon('heart-5')"></i></li>
-                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/Lelo_control_remoto.jpg')"></i></li>
+                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/Lelo_control_remoto.jpg')"></i>
+                  </li>
                 </ul>
               </div>
               <div class="part-2">
@@ -235,7 +276,8 @@
                 <ul>
                   <li><i id="cart-6" class="bi bi-cart" onclick="checkIcon('cart-6')"></i></li>
                   <li><i id="heart-6" class="bi bi-suit-heart" onclick="checkIcon('heart-6')"></i></li>
-                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/liebe_lubricante.webp')"></i></li>
+                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/liebe_lubricante.webp')"></i>
+                  </li>
                 </ul>
               </div>
               <div class="part-2">
@@ -271,7 +313,8 @@
                 <ul>
                   <li><i id="cart-8" class="bi bi-cart" onclick="checkIcon('cart-8')"></i></li>
                   <li><i id="heart-8" class="bi bi-suit-heart" onclick="checkIcon('heart-8')"></i></li>
-                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/lovense-vibrador.webp')"></i></li>
+                  <li><i class="bi bi-fullscreen" onclick="popupImage('./img/productos/lovense-vibrador.webp')"></i>
+                  </li>
                 </ul>
               </div>
               <div class="part-2">
@@ -363,7 +406,7 @@
       </div>
 
       <div class="row align-items-md-stretch">
-        
+
         <div class="text-center text-md-start col-md-6 col-lg-4 ">
           <div class="h-100 pb-3 p-md-5">
             <h4><i class="bi bi-geo-alt "></i> Dirección</h4>
@@ -379,18 +422,17 @@
             <h6>Contact@lovevibes.com</h6>
 
           </div>
-          
-           
-      
+
         </div>
         <div class="col-md-6 col-lg-8">
-          <iframe class="map-responsive justify-content-md-center mx-md-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.3244472664009!2d-5.929070954891089!3d37.406435714522004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1269414d8c133d%3A0x498ce95cde9f9931!2sILERNA%20Sevilla!5e0!3m2!1ses!2ses!4v1668627581190!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map-responsive justify-content-md-center mx-md-2"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.3244472664009!2d-5.929070954891089!3d37.406435714522004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1269414d8c133d%3A0x498ce95cde9f9931!2sILERNA%20Sevilla!5e0!3m2!1ses!2ses!4v1668627581190!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
-  
-
-
+    
   </div>
 </body>
 

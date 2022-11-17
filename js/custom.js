@@ -5,6 +5,10 @@ let cantProductosLove;
 function checkIcon(idIcon) {
     let iconSelected = document.getElementById(idIcon);
 
+    let numProduct = idIcon.slice(-1);
+
+    console.log(numProduct);
+
     if (iconSelected.classList.contains("bi-suit-heart")) {
         iconSelected.classList.remove("bi-suit-heart");
         iconSelected.classList.add("bi-suit-heart-fill");
@@ -19,21 +23,31 @@ function checkIcon(idIcon) {
         iconSelected.classList.remove("bi-cart");
         iconSelected.classList.add("bi-cart-fill");
 
-        cantProductosCart = addProduct("badge-cart", cantProductosCart);
+        cantProductosCart = addProduct("badge-cart", cantProductosCart, numProduct);
     } else if (iconSelected.classList.contains("bi-cart-fill")) {
         iconSelected.classList.remove("bi-cart-fill");
         iconSelected.classList.add("bi-cart");
 
-        cantProductosCart = remProduct("badge-cart", cantProductosCart);
+        cantProductosCart = remProduct("badge-cart", cantProductosCart, numProduct);
     }
 }
 
-function addProduct(id, contador) {
+function addProduct(id, contador, numProduct) {
     let badge = document.getElementById(id);
+    let emptyCart = document.getElementById("empty-cart");
+    
+    // Si es el carrito mostramos el producto
+    if (id == "badge-cart") {
+        let product = document.getElementById("cart-product-" + numProduct);
+        product.removeAttribute("hidden");
+    } 
 
     if (contador === undefined) {
         badge.removeAttribute("hidden");
         contador = 1;
+
+        if (id == "badge-cart") emptyCart.setAttribute("hidden", "true");
+
     } else {
         contador++;
         badge.innerHTML = String(contador);
@@ -42,15 +56,26 @@ function addProduct(id, contador) {
     return contador;
 }
 
-function remProduct(id, contador) {
+function remProduct(id, contador, numProduct) {
     let badge = document.getElementById(id);
+    let emptyCart = document.getElementById("empty-cart");
+
+    // Si es el carrito quitamos el producto
+    if (id == "badge-cart") {
+        let product = document.getElementById("cart-product-" + numProduct);
+        product.setAttribute("hidden", "true");
+    } 
 
     if (contador > 1) {
         contador--;
         badge.innerHTML = String(contador);
+
     } else {
         badge.setAttribute("hidden", "true");
         contador = undefined;
+
+        if (id == "badge-cart") emptyCart.removeAttribute("hidden");
+        
     }
 
     return contador;

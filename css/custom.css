@@ -252,6 +252,12 @@ body {
     background-color: rgba(212, 0, 255, 0.137);
 }
 
+.img-cart {
+    height: 25px;
+    margin-right: 5px;
+}
+
+
 /* Popup */
 .img-popup {
     position: fixed;
