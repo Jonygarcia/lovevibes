@@ -47,14 +47,14 @@
           <div class="collapse navbar-collapse justify-content-md-center" id="mobile-menu">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active text-hover-white" aria-current="page" href="#"><i
+                <a class="nav-link active text-hover-white" aria-current="page" href="./index.html"><i
                     class="bi bi-house-fill"></i> Inicio</a>
               </li>
 
               <li class="nav-item dropdown d-flex">
                 <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
                   aria-expanded="false"><i class="bi bi-star-fill"></i> Productos</a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu products-open">
                   <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
                         class="icon-product lubricantes"></i>Lubricantes</a></li>
                   <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
@@ -80,9 +80,9 @@
                   </i>
                   Carrito de la compra
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu cart-open">
                   <li id="empty-cart">
-                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " href="#">
                       No has añadido nada aún
                     </a>
                   </li>
@@ -160,7 +160,7 @@
     </section>
 
     <!-- Contenido -->
-    <section class="section-products">
+    <section id="products" class="section-products">
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-8 col-lg-6">
@@ -340,7 +340,7 @@
     </div>
 
     <!-- Confianza -->
-    <div class="bg col-12">
+    <div id="div-ofrecemos" class="bg col-12">
       <section class="container px-4 pb-5" id="hanging-icons">
 
         <div class="row justify-content-center text-center pt-5">
@@ -432,7 +432,23 @@
         </div>
       </div>
     </section>
-    
+
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4  bg mb-0">
+      <p class="col-md-4 mb-0 text-muted px-3">© 2022 LoveVibes</p>
+  
+      <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark px-3 px-md-0" rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end px-1 px-md-3">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="./index.html#products" class="nav-link px-2 text-muted">Productos</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mi carrito</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="./index.html#hanging-icons" class="nav-link px-2 text-muted">¿Quienes sómos?</a></li>
+      </ul>
+    </footer>
   </div>
 </body>
 

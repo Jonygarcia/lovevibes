@@ -1,4 +1,5 @@
 :root {
+    --primarycolor: rgba(212, 0, 255, 0.137);
     --secondcolor: #ff448f;
 }
 
@@ -58,13 +59,16 @@ body {
 }
 
 .banner-vibrar {
-    background-color: var(--secondcolor);
+    background-color: var(--primarycolor);
+
+    border-bottom: 4px solid var(--secondcolor);
+    border-top: 4px solid var(--secondcolor);
 }
 
 .text-vibrar {
-    color: white;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-        1px 1px 0 #000;
+    color:  black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+        1px 1px 0 white;
 }
 
 .line-separator {
@@ -249,7 +253,12 @@ body {
 }
 
 .bg {
-    background-color: rgba(212, 0, 255, 0.137);
+    background-color: var(--primarycolor);
+}
+
+#div-ofrecemos {
+    border-top: 4px solid var(--secondcolor);
+    border-bottom: 4px solid var(--secondcolor);
 }
 
 .img-cart {
@@ -333,6 +342,12 @@ body {
     width: 100%;
 }
 
+footer {
+    border-top: 4px solid var(--secondcolor);
+}
+
+
+
 @media screen and (max-width: 767px) {
     .text-hover-white:hover {
         background-color: rgba(255, 255, 255, 0);
@@ -347,4 +362,16 @@ body {
         height: 45px;
         margin-right: 2%;
     }
+
+    .navbar-nav .cart-open {
+        position: relative;
+        margin-left: -188px;
+        margin-top: 38px;
+    }
+
+    .navbar-nav .products-open {
+        margin-left: -108px;
+        margin-top: 38px;
+    }
+
 }
