@@ -35,6 +35,7 @@ function checkIcon(idIcon) {
 function addProduct(id, contador, numProduct) {
     let badge = document.getElementById(id);
     let emptyCart = document.getElementById("empty-cart");
+    let goCart = document.getElementById("btn-gocart");
     
     // Si es el carrito mostramos el producto
     if (id == "badge-cart") {
@@ -46,7 +47,11 @@ function addProduct(id, contador, numProduct) {
         badge.removeAttribute("hidden");
         contador = 1;
 
-        if (id == "badge-cart") emptyCart.setAttribute("hidden", "true");
+        if (id == "badge-cart") {
+            emptyCart.setAttribute("hidden", "true");
+            goCart.removeAttribute("hidden");
+        }
+
 
     } else {
         contador++;
@@ -59,6 +64,7 @@ function addProduct(id, contador, numProduct) {
 function remProduct(id, contador, numProduct) {
     let badge = document.getElementById(id);
     let emptyCart = document.getElementById("empty-cart");
+    let goCart = document.getElementById("btn-gocart");
 
     // Si es el carrito quitamos el producto
     if (id == "badge-cart") {
@@ -69,13 +75,14 @@ function remProduct(id, contador, numProduct) {
     if (contador > 1) {
         contador--;
         badge.innerHTML = String(contador);
-
     } else {
         badge.setAttribute("hidden", "true");
         contador = undefined;
 
-        if (id == "badge-cart") emptyCart.removeAttribute("hidden");
-        
+        if (id == "badge-cart") {
+            emptyCart.removeAttribute("hidden");
+            goCart.setAttribute("hidden", "true");
+        }
     }
 
     return contador;

@@ -348,6 +348,37 @@ footer {
 
 
 
+
+/** CARRITO DE LA COMPRA */
+
+.card {
+    border-radius: 15px;
+}
+
+.btn-micesta{
+    color: white;
+    background-color: rgb(26, 26, 26);
+
+}
+.btn-micesta:hover{
+    color: var(--secondcolor);
+    background-color: rgb(26, 26, 26);
+    box-shadow: 2px 4px 20px var(--secondcolor);
+    transition: all 0.2s ease;
+}
+
+.link-view-cart {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-view-cart:hover {
+    text-decoration: underline 2px var(--secondcolor) ;
+}
+
+
+
+
 @media screen and (max-width: 767px) {
     .text-hover-white:hover {
         background-color: rgba(255, 255, 255, 0);
@@ -365,13 +396,24 @@ footer {
 
     .navbar-nav .cart-open {
         position: relative;
-        margin-left: -188px;
+        margin-left: -100px;
         margin-top: 38px;
     }
 
     .navbar-nav .products-open {
         margin-left: -108px;
         margin-top: 38px;
+    }
+
+    .btn-micesta:hover{
+        color: white;
+        background-color: rgb(26, 26, 26);
+        box-shadow: none;
+        transition: none;
+    }
+
+    .link-view-cart:hover {
+        text-decoration: none;
     }
 
 }

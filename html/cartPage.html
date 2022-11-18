@@ -2,357 +2,367 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link href="./../css/bootstrap.css" rel="stylesheet" />
-    <link href="./../css/custom.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link href="./../css/bootstrap.css" rel="stylesheet" />
+  <link href="./../css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-    <!-- JavaScript -->
-    <script defer src="./../js/bootstrap.bundle.js"></script>
-    <script defer src="./../js/custom.js"></script>
-    <title>LoveVibes</title>
+  <!-- JavaScript -->
+  <script defer src="./../js/bootstrap.bundle.js"></script>
+  <script defer src="./../js/custom.js"></script>
+  <title>LoveVibes</title>
 </head>
 
 <body>
-    <div class="mx-auto">
-        <header id="header-pc" class="sticky-lg-top">
-            <!-- Logo Navbar PC & Tablet -->
-            <nav class="navbar navbar-expand-lg bg-white d-none d-md-block">
-                <div class="container-fluid justify-content-center ">
-                    <a href="./../index.html">
-                        <img class="nav-logo" src="./../img/lovevibes.png" alt="logo lovevibes">
+  <div class="mx-auto">
+    <header id="header-pc" class="sticky-lg-top">
+      <!-- Logo Navbar PC & Tablet -->
+      <nav class="navbar navbar-expand-lg bg-white d-none d-md-block">
+        <div class="container-fluid justify-content-center ">
+          <a href="./../index.html">
+            <img class="nav-logo" src="./../img/lovevibes.png" alt="logo lovevibes">
+          </a>
+        </div>
+      </nav>
+
+      <!-- Menu -->
+      <nav class="navbar navbar-expand-md bg-white mt-sm-0" aria-label="Tenth navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu"
+            aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Logo navbar mobile -->
+          <a href="./../index.html">
+            <img class="nav-logo d-block d-md-none my-auto" src="./../img/lovevibes.png" alt="logo lovevibes">
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-md-center" id="mobile-menu">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-hover-white" aria-current="page" href="./../index.html"><i
+                    class="bi bi-house-fill"></i> Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown d-flex">
+                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false"><i class="bi bi-star-fill"></i>
+                  Productos</a>
+                <ul class="dropdown-menu products-open">
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product lubricantes"></i>Lubricantes</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product juguetes"></i>Juguetes</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product lenceria"></i>Lencería</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product salud"></i>Higiene y salud</a></li>
+                  <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
+                        class="icon-product bdsm"></i>BDSM</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown d-flex position-relative">
+                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="bi bi-cart-fill">
+                    <span id="badge-cart"
+                      class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
+                      hidden="true">
+                      1
+                    </span>
+                  </i>
+                  Mi cesta
+                </a>
+                <ul class="dropdown-menu cart-open">
+                  <li id="empty-cart" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " href="#">
+                      No has añadido nada aún
                     </a>
-                </div>
-            </nav>
+                  </li>
+                  <li id="cart-product-1">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " hidden href="#"><img
+                        class="d-flex img-cart" src="./../img/productos/satisfyer-min.webp">29.99€ - Satisfyer Pro 2</a>
+                  </li>
+                  <li id="cart-product-2">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/mambo-min.webp">26.99€ -
+                      Platanomelón Mambo</a>
+                  </li>
+                  <li id="cart-product-3" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/brillyglam-min.webp">69.95€ - Brilly Glam
+                      Rabbit</a>
+                  </li>
+                  <li id="cart-product-4" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" hidden href="#"><img
+                        class="d-flex img-cart" src="./../img/productos/zumba-min.webp">29.99€ -
+                      Platanomelón Zumba</a>
+                  </li>
+                  <li id="cart-product-5" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/lelo-bolas-min.webp">178.99€ - Lelo Bolas
+                      Control Remoto</a>
+                  </li>
+                  <li id="cart-product-6">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/liebe-min.webp">6.99€ -
+                      Liebe Lubricantes</a>
+                  </li>
+                  <li id="cart-product-7" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/esposas-min.webp">10.49€
+                      - Esposas Peluche Ted</a>
+                  </li>
+                  <li id="cart-product-8" hidden="true">
+                    <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img class="d-flex img-cart"
+                        src="./../img/productos/lush-min.webp">118.99€ -
+                      Lovesense Lush 3</a>
+                  </li>
+                </ul>
+              </li>
 
-            <!-- Menu -->
-            <nav class="navbar navbar-expand-md bg-white mt-sm-0" aria-label="Tenth navbar example">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-menu"
-                        aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+              <div>
+                <li class="nav-item d-flex position-relative">
+                  <a class="nav-link text-black text-hover-white" href="#" aria-expanded="false">
+                    <i class="bi bi-heart-fill">
+                      <span id="badge-love"
+                        class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
+                        hidden="true">
+                        1
+                      </span>
+                    </i>
+                    Lista de deseados
+                  </a>
+                </li>
+              </div>
 
-                    <!-- Logo navbar mobile -->
-                    <a href="./../index.html">
-                        <img class="nav-logo d-block d-md-none my-auto" src="./../img/lovevibes.png"
-                            alt="logo lovevibes">
-                    </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                    <div class="collapse navbar-collapse justify-content-md-center" id="mobile-menu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active text-hover-white" aria-current="page"
-                                    href="./../index.html"><i class="bi bi-house-fill"></i> Inicio</a>
-                            </li>
+    <section class="h-100 h-custom bg">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div class="card card-registration card-registration-2">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <div class="p-5">
+                      <div class="d-flex justify-content-between align-items-center mb-5">
+                        <h1 class="fw-bold mb-0 text-black"><i class="bi bi-cart-fill"></i> Mi cesta</h1>
+                        <h6 class="mb-0 text-muted">3 Artículos</h6>
+                      </div>
+                      <hr class="my-4">
 
-                            <li class="nav-item dropdown d-flex">
-                                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#"
-                                    data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-star-fill"></i>
-                                    Productos</a>
-                                <ul class="dropdown-menu products-open">
-                                    <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
-                                                class="icon-product lubricantes"></i>Lubricantes</a></li>
-                                    <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
-                                                class="icon-product juguetes"></i>Juguetes</a></li>
-                                    <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
-                                                class="icon-product lenceria"></i>Lencería</a></li>
-                                    <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
-                                                class="icon-product salud"></i>Higiene y salud</a></li>
-                                    <li><a class="dropdown-item mx-0 px-0 d-flex text-hover-white" href="#"><i
-                                                class="icon-product bdsm"></i>BDSM</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown d-flex position-relative">
-                                <a class="nav-link dropdown-toggle text-black text-hover-white" href="#"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-cart-fill">
-                                        <span id="badge-cart"
-                                            class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
-                                            hidden="true">
-                                            1
-                                        </span>
-                                    </i>
-                                    Carrito de la compra
-                                </a>
-                                <ul class="dropdown-menu cart-open">
-                                    <li id="empty-cart">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " href="#">
-                                            No has añadido nada aún
-                                        </a>
-                                    </li>
-                                    <li id="cart-product-1" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white " hidden href="#"><img
-                                                class="d-flex img-cart"
-                                                src="./../img/productos/satisfyer-min.webp">29.99€ - Satisfyer Pro 2</a>
-                                    </li>
-                                    <li id="cart-product-2" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart" src="./../img/productos/mambo-min.webp">26.99€ -
-                                            Platanomelón Mambo</a>
-                                    </li>
-                                    <li id="cart-product-3" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart"
-                                                src="./../img/productos/brillyglam-min.webp">69.95€ - Brilly Glam
-                                            Rabbit</a>
-                                    </li>
-                                    <li id="cart-product-4" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" hidden href="#"><img
-                                                class="d-flex img-cart" src="./../img/productos/zumba-min.webp">29.99€ -
-                                            Platanomelón Zumba</a>
-                                    </li>
-                                    <li id="cart-product-5" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart"
-                                                src="./../img/productos/lelo-bolas-min.webp">178.99€ - Lelo Bolas
-                                            Control Remoto</a>
-                                    </li>
-                                    <li id="cart-product-6" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart" src="./../img/productos/liebe-min.webp">6.99€ -
-                                            Liebe Lubricantes</a>
-                                    </li>
-                                    <li id="cart-product-7" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart" src="./../img/productos/esposas-min.webp">10.49€
-                                            - Esposas Peluche Ted</a>
-                                    </li>
-                                    <li id="cart-product-8" hidden="true">
-                                        <a class="dropdown-item mx-0 px-2 d-flex text-hover-white" href="#"><img
-                                                class="d-flex img-cart" src="./../img/productos/lush-min.webp">118.99€ -
-                                            Lovesense Lush 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <div>
-                                <li class="nav-item d-flex position-relative">
-                                    <a class="nav-link text-black text-hover-white" href="#" aria-expanded="false">
-                                        <i class="bi bi-heart-fill">
-                                            <span id="badge-love"
-                                                class="position-absolute top-0 start-0 translate-middle badge rounded-pill badge-cart"
-                                                hidden="true">
-                                                1
-                                            </span>
-                                        </i>
-                                        Lista de deseados
-                                    </a>
-                                </li>
-                            </div>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-
-        <section class="h-100 h-custom" style="background-color: #d2c9ff;">
-            <div class="container py-5 h-100">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-12">
-                  <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-                    <div class="card-body p-0">
-                      <div class="row g-0">
-                        <div class="col-lg-8">
-                          <div class="p-5">
-                            <div class="d-flex justify-content-between align-items-center mb-5">
-                              <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
-                              <h6 class="mb-0 text-muted">3 items</h6>
-                            </div>
-                            <hr class="my-4">
-          
-                            <div class="row mb-4 d-flex justify-content-between align-items-center">
-                              <div class="col-md-2 col-lg-2 col-xl-2">
-                                <img
-                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
-                                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-3">
-                                <h6 class="text-muted">Shirt</h6>
-                                <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                  <i class="fas fa-minus"></i>
-                                </button>
-          
-                                <input id="form1" min="0" name="quantity" value="1" type="number"
-                                  class="form-control form-control-sm" />
-          
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                  <i class="fas fa-plus"></i>
-                                </button>
-                              </div>
-                              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                <h6 class="mb-0">€ 44.00</h6>
-                              </div>
-                              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                              </div>
-                            </div>
-          
-                            <hr class="my-4">
-          
-                            <div class="row mb-4 d-flex justify-content-between align-items-center">
-                              <div class="col-md-2 col-lg-2 col-xl-2">
-                                <img
-                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
-                                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-3">
-                                <h6 class="text-muted">Shirt</h6>
-                                <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                  <i class="fas fa-minus"></i>
-                                </button>
-          
-                                <input id="form1" min="0" name="quantity" value="1" type="number"
-                                  class="form-control form-control-sm" />
-          
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                  <i class="fas fa-plus"></i>
-                                </button>
-                              </div>
-                              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                <h6 class="mb-0">€ 44.00</h6>
-                              </div>
-                              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                              </div>
-                            </div>
-          
-                            <hr class="my-4">
-          
-                            <div class="row mb-4 d-flex justify-content-between align-items-center">
-                              <div class="col-md-2 col-lg-2 col-xl-2">
-                                <img
-                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
-                                  class="img-fluid rounded-3" alt="Cotton T-shirt">
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-3">
-                                <h6 class="text-muted">Shirt</h6>
-                                <h6 class="text-black mb-0">Cotton T-shirt</h6>
-                              </div>
-                              <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                  <i class="fas fa-minus"></i>
-                                </button>
-          
-                                <input id="form1" min="0" name="quantity" value="1" type="number"
-                                  class="form-control form-control-sm" />
-          
-                                <button class="btn btn-link px-2"
-                                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                  <i class="fas fa-plus"></i>
-                                </button>
-                              </div>
-                              <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                <h6 class="mb-0">€ 44.00</h6>
-                              </div>
-                              <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                                <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
-                              </div>
-                            </div>
-          
-                            <hr class="my-4">
-          
-                            <div class="pt-5">
-                              <h6 class="mb-0"><a href="#!" class="text-body"><i
-                                    class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
-                            </div>
-                          </div>
+                      <!-- Product -->
+                      <div class="row mb-4 d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img src="./../img/productos/SatisfyerPro2.webp" class="img-fluid rounded-3"
+                            alt="Satisfyer Pro 2">
                         </div>
-                        <div class="col-lg-4 bg-grey">
-                          <div class="p-5">
-                            <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
-                            <hr class="my-4">
-          
-                            <div class="d-flex justify-content-between mb-4">
-                              <h5 class="text-uppercase">items 3</h5>
-                              <h5>€ 132.00</h5>
-                            </div>
-          
-                            <h5 class="text-uppercase mb-3">Shipping</h5>
-          
-                            <div class="mb-4 pb-2">
-                              <select class="select">
-                                <option value="1">Standard-Delivery- €5.00</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="4">Four</option>
-                              </select>
-                            </div>
-          
-                            <h5 class="text-uppercase mb-3">Give code</h5>
-          
-                            <div class="mb-5">
-                              <div class="form-outline">
-                                <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                                <label class="form-label" for="form3Examplea2">Enter your code</label>
-                              </div>
-                            </div>
-          
-                            <hr class="my-4">
-          
-                            <div class="d-flex justify-content-between mb-5">
-                              <h5 class="text-uppercase">Total price</h5>
-                              <h5>€ 137.00</h5>
-                            </div>
-          
-                            <button type="button" class="btn btn-dark btn-block btn-lg"
-                              data-mdb-ripple-color="dark">Register</button>
-          
-                          </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 mb-3 mb-md-0">
+                          <h6 class="text-muted">Juguetes</h6>
+                          <h6 class="text-black">Satisfyer Pro 2</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex mb-3 mb-md-0">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+
+                          <input id="form1" min="1" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h6 class="mb-0">29.99€</h6>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-muted"><i class="bi bi-trash-fill"></i></a>
                         </div>
                       </div>
+
+                      <hr class="my-4">
+
+                      <!-- Product -->
+                      <div class="row mb-4 d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img src="./../img/productos/MamboLavanda.webp" class="img-fluid rounded-3"
+                            alt="Mambo Lavanda">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 mb-3 mb-md-0">
+                          <h6 class="text-muted">Juguetes</h6>
+                          <h6 class="text-black mb-0">Platanomelón Mambo Color Lavanda</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex mb-3 mb-md-0">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+
+                          <input id="form1" min="1" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h6 class="mb-0">26.99€</h6>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-muted"><i class="bi bi-trash-fill"></i></a>
+                        </div>
+                      </div>
+
+                      <hr class="my-4">
+
+                      <!-- Product -->
+                      <div class="row mb-4 d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img src="./../img/productos/liebe_lubricante.webp" class="img-fluid rounded-3"
+                            alt="Liebe Lubricantes">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 mb-3 mb-md-0">
+                          <h6 class="text-muted">Lubricantes</h6>
+                          <h6 class="text-black">Liebe Lubricantes</h6>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex mb-3 mb-md-0">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="bi bi-dash-lg"></i>
+                          </button>
+
+                          <input id="form1" min="1" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h6 class="mb-0">6.99€</h6>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" class="text-muted"><i class="bi bi-trash-fill"></i></a>
+                        </div>
+                      </div>
+
+                      <hr class="my-4">
+
+                      <div class="pt-5">
+                        <h6 class="mb-0"><a href="./../index.html" class="text-body"><i
+                              class="bi bi-arrow-left me-2"></i>Volver</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 bg-grey">
+                    <div class="p-5">
+                      <h3 class="fw-bold mb-5 mt-2 pt-1">Resumen</h3>
+                      <hr class="my-4">
+
+                      <div class="d-flex justify-content-between mb-4">
+                        <h5>Subtotal</h5>
+                        <h5 id="precioSubtotal">63.97€</h5>
+                      </div>
+
+                      <h5 class="mb-3">Tipo de envío</h5>
+
+                      <!-- TODO HOVER OPCIONES -->
+                      <div class="mb-4 pb-2">
+                        <select id="selectEnvio" class="form-select">
+                          <option name="optionEnvio" value="1">Envío estándar 4€ (48-72 horas)</option>
+                          <option name="optionEnvio" value="2">Envío express 10€ (24 horas)</option>
+                        </select>
+                      </div>
+
+                      <h5 class="mb-3">Código promocional</h5>
+
+                      <div class="mb-5">
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplea2" class="form-control"
+                            placeholder="Introduce tu código" />
+                        </div>
+                      </div>
+
+                      <hr class="my-4">
+
+
+
+                      <div class="d-flex justify-content-between mb-5">
+                        <h5 class="text-uppercase">TOTAL COMPRA</h5>
+                        <h5 id="precioTotal">€</h5>
+                      </div>
+
+                      <script>
+                        let select = document.getElementById("selectEnvio");
+                        let precioTotal = document.getElementById("precioTotal");
+                        let subtotal = document.getElementById("precioSubtotal").innerHTML;
+                        subtotal = subtotal.substring(0, subtotal.length - 1);
+
+                        let total = null;
+
+                        select.addEventListener("change", function () {
+                          total = select.value == 2 ? +subtotal + 10 + "€" : +subtotal + 4 + "€"
+
+                          precioTotal.innerHTML = total;
+                        });
+
+                        window.onload = function () {
+                          precioTotal.innerHTML = +subtotal + 4 + "€";
+                        }
+                      </script>
+
+                      <button type="button" class="btn btn-block btn-lg btn-micesta">
+                        <h5>Tramitar pedido</h5>
+                      </button>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 mt-0 bg mb-0">
+      <p class="col-md-4 mb-0 text-muted px-3">© 2022 LoveVibes</p>
 
+      <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark px-3 px-md-0"
+        rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+        <img alt="Licencia de Creative Commons" style="border-width:0"
+          src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+      </a>
 
-
-
-
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 bg mb-0">
-            <p class="col-md-4 mb-0 text-muted px-3">© 2022 LoveVibes</p>
-
-            <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark px-3 px-md-0"
-                rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-                <img alt="Licencia de Creative Commons" style="border-width:0"
-                    src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-            </a>
-
-            <ul class="nav col-md-4 justify-content-end px-1 px-md-3">
-                <li class="nav-item"><a href="./../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                <li class="nav-item"><a href="./../index.html#products" class="nav-link px-2 text-muted">Productos</a>
-                </li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mi carrito</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                <li class="nav-item"><a href="./../index.html#hanging-icons" class="nav-link px-2 text-muted">¿Quienes
-                        sómos?</a></li>
-            </ul>
-        </footer>
-    </div>
+      <ul class="nav col-md-4 justify-content-end px-1 px-md-3">
+        <li class="nav-item"><a href="./../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="./../index.html#products" class="nav-link px-2 text-muted">Productos</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mi cesta</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="./../index.html#hanging-icons" class="nav-link px-2 text-muted">¿Quienes
+            sómos?</a></li>
+      </ul>
+    </footer>
+  </div>
 </body>
 
 </html>
