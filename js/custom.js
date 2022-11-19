@@ -36,12 +36,12 @@ function addProduct(id, contador, numProduct) {
     let badge = document.getElementById(id);
     let emptyCart = document.getElementById("empty-cart");
     let goCart = document.getElementById("btn-gocart");
-    
+
     // Si es el carrito mostramos el producto
     if (id == "badge-cart") {
         let product = document.getElementById("cart-product-" + numProduct);
         product.removeAttribute("hidden");
-    } 
+    }
 
     if (contador === undefined) {
         badge.removeAttribute("hidden");
@@ -51,8 +51,6 @@ function addProduct(id, contador, numProduct) {
             emptyCart.setAttribute("hidden", "true");
             goCart.removeAttribute("hidden");
         }
-
-
     } else {
         contador++;
         badge.innerHTML = String(contador);
@@ -70,7 +68,7 @@ function remProduct(id, contador, numProduct) {
     if (id == "badge-cart") {
         let product = document.getElementById("cart-product-" + numProduct);
         product.setAttribute("hidden", "true");
-    } 
+    }
 
     if (contador > 1) {
         contador--;

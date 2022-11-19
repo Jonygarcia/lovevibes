@@ -7,6 +7,7 @@ body {
     background-color: white;
 }
 
+/** INICIO  */
 .nav-logo {
     width: auto;
     max-height: 100px;
@@ -66,7 +67,7 @@ body {
 }
 
 .text-vibrar {
-    color:  black;
+    color: black;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
         1px 1px 0 white;
 }
@@ -266,8 +267,7 @@ body {
     margin-right: 5px;
 }
 
-
-/* Popup */
+/** Popup */
 .img-popup {
     position: fixed;
     top: 0;
@@ -337,7 +337,7 @@ body {
     }
 }
 
-.map-responsive{
+.map-responsive {
     justify-content: center;
     width: 100%;
 }
@@ -346,21 +346,17 @@ footer {
     border-top: 4px solid var(--secondcolor);
 }
 
-
-
-
-/** CARRITO DE LA COMPRA */
-
+/** CHECKOUT CARRITO */
 .card {
     border-radius: 15px;
 }
 
-.btn-micesta{
+.btn-micesta {
     color: white;
     background-color: rgb(26, 26, 26);
-
 }
-.btn-micesta:hover{
+
+.btn-micesta:hover {
     color: var(--secondcolor);
     background-color: rgb(26, 26, 26);
     box-shadow: 2px 4px 20px var(--secondcolor);
@@ -373,12 +369,10 @@ footer {
 }
 
 .link-view-cart:hover {
-    text-decoration: underline 2px var(--secondcolor) ;
+    text-decoration: underline 2px var(--secondcolor);
 }
 
-
-
-
+/** MOBILE PARAMS  */
 @media screen and (max-width: 767px) {
     .text-hover-white:hover {
         background-color: rgba(255, 255, 255, 0);
@@ -405,7 +399,7 @@ footer {
         margin-top: 38px;
     }
 
-    .btn-micesta:hover{
+    .btn-micesta:hover {
         color: white;
         background-color: rgb(26, 26, 26);
         box-shadow: none;
@@ -415,5 +409,4 @@ footer {
     .link-view-cart:hover {
         text-decoration: none;
     }
-
 }
