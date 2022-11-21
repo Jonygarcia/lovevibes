@@ -8,6 +8,10 @@ body {
 }
 
 /** INICIO  */
+.div-body {
+    min-height: 100vh;
+}
+
 .nav-logo {
     width: auto;
     max-height: 100px;
@@ -370,6 +374,10 @@ footer {
 
 .link-view-cart:hover {
     text-decoration: underline 2px var(--secondcolor);
+}
+
+.content-cart{
+    min-height: 80.9vh;
 }
 
 /** MOBILE PARAMS  */
